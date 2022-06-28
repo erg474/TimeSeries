@@ -16,7 +16,3 @@ daily_vol = returns.std()
 rate_of_return = (stock_data['Open'] - stock_data['Close']) / stock_data['Open']
 print(rate_of_return)
 
-
-start_comdty = dt.datetime(2020,5,1)
-end_comdty = dt.datetime(2022,5,1)
-#stock_data_comdty =  yf.download() #need commodity reference name
