@@ -21,4 +21,16 @@ plt.figure(num=None, figsize=(15,6), dpi=80, facecolor='w', edgecolor='k')
 data['Close'].plot()
 plt.tight_layout()
 plt.grid()
-plt.show()
+#plt.show()
+
+df = data[['Close']].copy()
+#split data into train and test
+train, test = df.iloc[0:-200], df.iloc[-200:len(df)]
+print(len(train), len(test))
+
+train_max = train.max()
+train_min = train.min()
+
+#Normalize the dataframes
+train = (train - train_min) / (train_max - train_min)
+test  = (test - train_min) / (train_max - train_min)
