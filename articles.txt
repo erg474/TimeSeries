@@ -1,0 +1,70 @@
+Articles on Python Financial Time Series
+(go incognito to view all)
+Theory:
+https://quant.stackexchange.com/questions/15144/what-machine-learning-method-is-more-suitable-for-prediction-of-financial-time-s
+https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+https://medium.com/swlh/generalised-linear-models-basics-and-implementation-8efcb5268598
+https://medium.com/analytics-vidhya/generalised-linear-model-part-2-710c1d96a059
+
+1. LTSM [done]
+https://medium.com/towards-data-science/how-not-to-predict-stock-prices-with-lstms-a51f564ccbca
+Conclusion - This LTSM is badly made and will only predict a day ahead based off of yesterdays price. A more useful LTSM would look further into the future, like that reddit post:
+
+
+[Follow Up LTSM] : https://www.reddit.com/r/algotrading/comments/mxijbd/using_an_lstm_for_stock_price_prediction/
+
+2. Super Momentum Stock Screener
+https://medium.com/@chris_42047/building-a-super-momentum-stock-screener-for-thousands-of-stocks-python-446c0298f7e8
+
+3. Building a Stock Value Screener with SimFin that screens thousands of Stocks (Python Algorithmic Trading)
+https://medium.com/@chris_42047/building-a-stock-value-screener-with-simfin-that-screens-thousands-of-stocks-python-algorithmic-47cefcb27b91
+
+4. Can an AI Model Predict the Stock Price? (not really)
+https://algorithmictrading.substack.com/p/can-a-asimple-ai-model-predict-the
+
+5. Neural Nets, Stock Prices, and the Fourier Transform
+https://trevormcguire.medium.com/neural-nets-stock-prices-and-the-fourier-transform-682a53744e7c
+
+6. Can you predict the Rise and Fall of Stocks Using Machine Learning & Python
+https://randerson112358.medium.com/can-you-predict-the-rise-and-fall-of-stocks-using-machine-learning-python-4f274f8d3bfd
+
+7. Genetic Algorithm
+https://audhiaprilliant.medium.com/the-step-by-step-manual-calculation-of-genetic-algorithm-for-optimization-477dad521a1b
+
+8. Sentiment Analysis on News Headlines and Stock Price Changes
+https://pub.towardsai.net/sentiment-analysis-on-news-headlines-and-stock-price-changes-69978b5bf2a6
+
+9. Chart Pattern Recognition in Python
+https://kaabar-sofien.medium.com/chart-pattern-recognition-in-python-fda5c7efe7bf
+9b
+https://wire.insiderfinance.io/how-to-generate-80-technical-indicators-of-historical-stock-currency-prices-94ba7153c272
+
+10. Darts' Swiss Knife for Time Series Forecasting
+https://towardsdatascience.com/darts-swiss-knife-for-time-series-forecasting-in-python-f37bb74c126
+
+11. ARIMA Time Series Forecasting
+https://towardsdatascience.com/machine-learning-part-19-time-series-and-autoregressive-integrated-moving-average-model-arima-c1005347b0d7
+
+12. End to End Project on Time Series Analysis and Forecasting with Python
+https://towardsdatascience.com/an-end-to-end-project-on-time-series-analysis-and-forecasting-with-python-4835e6bf050b
+
+13. How not to use Machine Learning for Time Series Forecasting
+https://towardsdatascience.com/how-not-to-use-machine-learning-for-time-series-forecasting-avoiding-the-pitfalls-19f9d7adf424
+
+14. Time Series Analysis in Python : An Introduction
+https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a
+
+15. Time Series from Scratch - White Noise and Random Walk
+https://towardsdatascience.com/time-series-from-scratch-white-noise-and-random-walk-5c96270514d3
+
+16. How to Detect Random Walk and White Noise in Time Series Forecasting
+https://towardsdatascience.com/how-to-detect-random-walk-and-white-noise-in-time-series-forecasting-bdb5bbd4ef81
+
+17. Backtesting Algorithmic Trading
+https://blog.devgenius.io/algorithmic-trading-backtesting-a-strategy-in-python-3a136be16ece
+
+18. https://www.thepythoncode.com/article/stock-price-prediction-in-python-using-tensorflow-2-and-keras
+
+Viraf:
+Viraf : https://medium.com/@virafpatrawala
+https://medium.com/swlh/can-a-monkey-do-just-as-well-in-the-stock-market-as-a-technical-analyst-bb54ab63373c
