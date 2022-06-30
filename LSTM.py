@@ -22,7 +22,7 @@ def create_dataset(X, y, time_steps=1): #capital X
         ys.append(y.iloc[i + time_steps])
     return np.array(Xs), np.array(ys)
 
-ticker = yf.Ticker("MSFT")
+ticker = yf.Ticker("RELIANCE.NS")
 data = ticker.history(period = "15y", interval = "1d")
 data.sort_values('Date', inplace=True, ascending=True)
 print(data.head())
@@ -62,6 +62,30 @@ model.summary()
 history = model.fit(
     X_train, y_train,
     epochs=50,
-    batch_size=32
+    batch_size=32,
     shuffle=False
 )
+
+plt.plot(history.history['loss'], label='train')
+plt.legend();
+#plt.show()
+
+y_pred = model.predict(X_test)
+
+#Rescale data back to original scale
+y_test = y_test  *(train_max[0] - train_min[0]) + train_min[0]
+y_pred = y_pred  *(train_max[0] - train_min[0]) + train_min[0]
+y_train = y_train*(train_max[0] - train_min[0]) + train_min[0]
+
+#Plotting the results
+plt.plot(np.arange(len(y_train), len(y_train) + len(y_test)), y_test.flatten(), marker='.', label="true")
+plt.plot(np.arange(len(y_train), len(y_train) + len(y_test)), y_pred.flatten(), 'r', marker='.', label="prediction")
+plt.plot(np.arange(0, len(y_train)), y_train.flatten(), 'g', marker='.', label="history")
+plt.ylabel('Close')
+plt.xlabel('Time Step')
+plt.legend()
+plt.show()
+
+
+#This is not very useful, and an example of how to not make an LSTM Algorithm.
+#It simply predicts based off of yesterday's value.

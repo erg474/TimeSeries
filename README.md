@@ -23,5 +23,9 @@ Details
 3.
 
 4. LSTMs - LSTMs are a type of neural network
+A little more effort will be required to formulate the problem statement, inputs, and model. Some good direction to head in would be predicting changes in value (a derivative or second derivative) instead of the value itself. Predicting only the stock price movements (binary classification problem) could be another option. Or to use an ensemble of models to achieve combined/different goals. I’d recommend that you try to gain stronger domain knowledge in these fields first, followed by explorations — don’t restrict yourself to these ideas or other ideas you see on the internet.
+
+
+
 
 Testing git again
