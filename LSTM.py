@@ -31,7 +31,7 @@ plt.figure(num=None, figsize=(15,6), dpi=80, facecolor='w', edgecolor='k')
 data['Close'].plot()
 plt.tight_layout()
 plt.grid()
-#plt.show()
+plt.show()
 
 df = data[['Close']].copy()
 #split data into train and test
@@ -47,7 +47,7 @@ test  = (test - train_min) / (train_max - train_min)
 #NOTE: When normalizing data, do not normalize the test data separately
 
 
-time_steps = 10
+time_steps = 15
 
 X_train, y_train = create_dataset(train, train.Close, time_steps)
 X_test, y_test = create_dataset(test, test.Close, time_steps)
@@ -68,7 +68,7 @@ history = model.fit(
 
 plt.plot(history.history['loss'], label='train')
 plt.legend();
-#plt.show()
+plt.show()
 
 y_pred = model.predict(X_test)
 
