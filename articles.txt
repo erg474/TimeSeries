@@ -29,6 +29,7 @@ https://algorithmictrading.substack.com/p/can-a-asimple-ai-model-predict-the
 
 [9/10] 5. Neural Nets, Stock Prices, and the Fourier Transform
 https://trevormcguire.medium.com/neural-nets-stock-prices-and-the-fourier-transform-682a53744e7c
+Bad method, illusory results, only repeating a signal.
 
 [9/10] 6. Can you predict the Rise and Fall of Stocks Using Machine Learning & Python
 https://randerson112358.medium.com/can-you-predict-the-rise-and-fall-of-stocks-using-machine-learning-python-4f274f8d3bfd
@@ -73,3 +74,7 @@ https://blog.devgenius.io/algorithmic-trading-backtesting-a-strategy-in-python-3
 Viraf:
 Viraf : https://medium.com/@virafpatrawala
 https://medium.com/swlh/can-a-monkey-do-just-as-well-in-the-stock-market-as-a-technical-analyst-bb54ab63373c
+
+[9/10] 5, 6, 13
+[8/10] 4, 12
+[7/10] 7, 8, 11, 16, 18

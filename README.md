@@ -37,4 +37,5 @@ Not impossible, but typical loss functions are derived assuming homoskedastic no
 
 
 
-Testing git again
+Explaining the functions in this repo : 
+Make this as a list
