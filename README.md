@@ -10,6 +10,7 @@ Contents - A few Common Quantitative Methods for Financial Time Series Analysis 
 3. Neural Network Architectures
 4. LSTM (Long Short Term Memory) (included in 3)
 5. Reinforcement Learning
+What about monte carlo?
 
 Other Useful Financial Investigations:
 1. Discounted Cash Flow Models - Instrinsic Analysis
