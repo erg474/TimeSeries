@@ -11,7 +11,7 @@ import yfinance as yf
 start = pd.datetime(2011, 1, 1)
 end = pd.datetime(2021, 1, 1)
 
-df = yf.download("MSFT", start, end)
+df = yf.download("AMZN", start, end)
 df["Price_Up"] = np.where(df["Close"].shift(-1) > df["Close"], 1, 0)
 #days where day after has higher close price are marked as 1
 
@@ -36,6 +36,8 @@ print(Y_test)
 
 # Conclusion here, the underlying model needs explaining as well as an overview
 # of its outcome
+# This method did not really work, for the stocks I used it only gets 0.5.
+# Needs more training, testing and better data. Google was used in the original.
 
 
 print("Debug")
